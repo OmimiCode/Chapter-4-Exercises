@@ -46,9 +46,11 @@ public class SalaryCalculator {
         if (hoursWorked <= 40) {
             grossPay = hoursWorked * hourlyRate;
         } else {
-            System.out.printf(" Overtime Noticed" /* your gross pay is*/);
-            int HalfTime = hoursWorked / 2;
-            grossPay = (hoursWorked + HalfTime) * hourlyRate;
+            System.out.println(" Overtime Noticed" /* your gross pay is*/);
+            double overTime = hoursWorked - 40;
+            double extraPay = overTime*(hourlyRate*1.5);
+            double normalSalary = 40 * hourlyRate;
+            grossPay = normalSalary + extraPay;
         }
         return grossPay;
     }
