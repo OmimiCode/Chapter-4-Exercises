@@ -26,8 +26,8 @@ public class Cryptography {
 
 //shredding the user input into single digit
 
-    public void firstDigit() {
-        userInput = Integer.parseInt(JOptionPane.showInputDialog("ENTER 4 DIGIT INTEGERS TO BE ENCRYPTED"));
+    public void firstDigit() {// userInput = Integer.parseInt(JOptionPane.showInputDialog("ENTER 4 DIGIT INTEGERS TO BE ENCRYPTED"));
+     userInput();
         while (Integer.toString(userInput).length() != 4) {
             System.out.println("please you can only enter 4-digit, try Again");
             userInput = Integer.parseInt(JOptionPane.showInputDialog("ENTER 4 DIGIT INTEGERS TO BE ENCRYPTED"));
