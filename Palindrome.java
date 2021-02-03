@@ -14,7 +14,6 @@ public class Palindrome {
     public void input() {
         int input = Integer.parseInt(JOptionPane.showInputDialog("enter 5-digit palindromic integers"));
         while (Integer.toString(input).length() != 5) {
-            System.out.println("please enter 5-digit integers");
             input = Integer.parseInt(JOptionPane.showInputDialog("enter 5-digit palindromic integers"));
         }
             this.input = input;
@@ -34,14 +33,14 @@ public class Palindrome {
             int ci = bi % 100;
             d = ci / 10;
             int di = ci % 10;
-            e = di / 1;
+            e = di ;
         } else {
             System.out.println("your input is not a 5-digit");
         }
     }
 
     public int getIsPalindromic() {
-        if (a == e && b == d /*&& c!=a && c!=b && c!=d && c!=e*/) {
+        if (a == e && b == d) {
             System.out.println("your input is palindromic!");
         } else {
             System.out.println("NOT PALINDROMIC");
